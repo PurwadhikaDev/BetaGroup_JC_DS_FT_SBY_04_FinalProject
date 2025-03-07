@@ -1,73 +1,73 @@
-<h1> [Daegu Apartment Predict Price] </h1>
+# **Bank Term Deposit Subscription Prediction**  
 
-## 1. Project Overview
-This project analyzes business data to extract insights, improve This project analyzes business data to extract insights, enhance decision-making, and identify key trends. The primary focus is to predict apartment sale prices, guiding property investments and optimizing real estate development strategies. Key business objectives include optimizing sales.
+## **1. Project Overview**  
+This project focuses on predicting customer subscription to term deposits using machine learning. The objective is to optimize marketing efforts, reduce costs, and improve conversion rates by identifying high-potential customers.  
 
-**Key Objectives:**  
-- **Objective 1:** Analyze the relationship between key features (e.g., size, year built, number of facilities, and nearby amenities) and apartment sale prices to uncover pricing patterns.  
-- **Objective 2:** Develop a regression-based machine learning model to accurately predict apartment sale prices.  
-- **Objective 3:** Provide actionable insights for sellers to set competitive and market-aligned prices, reducing time on the market and maximizing profits.  
-- **Objective 4:** Highlight valuable property features to attract potential buyers and optimize real estate development strategies.  
+### **Key Objectives:**  
+- **Improve targeting efficiency** by identifying customers most likely to subscribe to term deposits.  
+- **Reduce marketing costs** by minimizing outreach to non-potential customers.  
+- **Enhance conversion rates** by optimizing telemarketing strategies.  
+- **Provide business insights** to refine customer segmentation and improve future campaigns.  
 
-## 2. Data Sources
-- [Dataset 1](link) - Description of dataset (e.g., Sales data for 2020–2023)
+## **2. Data Sources**  
+- **Bank marketing dataset** (historical customer interactions and campaign outcomes).  
+- **Economic indicators** such as interest rates, employment variation rates, and consumer confidence.  
 
+## **3. Technologies Used**  
+- **Programming Language:** Python (pandas, numpy)  
+- **Visualization:** Matplotlib, Seaborn  
+- **Statistics:** SciPy, Statsmodels  
+- **Machine Learning:** Scikit-learn, Imbalanced-learn, LightGBM  
+- **Model Evaluation:** F2-score, Precision, Recall, Confusion Matrix  
+- **Version Control:** Git  
+- **Development Environment:** Jupyter Notebook  
 
-## 3. Technologies Used
-- Programming Language: Python (pandas, numpy)
-- Visualization: Matplotlib, Seaborn
-- Statistic : scipy, statmodels
-- Machine learning : scikit-learn, imblearn
-- Version Control: Git
-- Others: Jupyter Notebook
-
-## 4. Project Structure
+## **4. Project Structure**  
 
 ```
-├── README.md          <- The top-level README for developers using this project.
+├── README.md          <- Project documentation.
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── raw            <- Original dataset.
+│   ├── processed      <- Cleaned and preprocessed dataset for modeling.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models             <- Saved trained models for prediction.
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter Notebooks with EDA, model training, and evaluation.
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── reports            <- Business insights, visualizations, and final analysis.
+│   └── figures        <- Graphs and plots used in reporting.
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
+├── requirements.txt   <- List of dependencies for project reproduction.
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-└── src                <- Source code for use in this project.
+└── src                <- Source code for data processing and model training.
+```  
 
-```
+## **5. Summary of Findings**  
 
-## 5. Summary of Findings  
+### **5.1 Business Insights**  
+- **Customer engagement is key**: Longer call durations and previous interactions increase the likelihood of subscription.  
+- **Certain demographics respond better**: Retired individuals, students, and entrepreneurs have the highest subscription rates.  
+- **Economic conditions matter**: Higher consumer confidence and stable employment rates correlate with higher conversions.  
+- **Campaign timing impacts success**: Subscription rates peak in March, September, October, and December.  
+- **Past campaign success predicts future interest**: Customers who previously subscribed are more likely to do so again.  
+- **Mobile outreach is more effective**: Contacting customers via cellular results in better conversion rates than landlines.  
 
-### 5.1 Business Insight  
-- Apartment prices are significantly influenced by features like size, age, nearby amenities, and location.  
-- Incorporating additional features such as seasonal trends or proximity to key locations can improve prediction accuracy.  
-- Outliers in the dataset can distort predictions, highlighting the need for robust preprocessing.  
-- Regular updates with new data ensure the model remains relevant in a dynamic market.  
+### **5.2 Actionable Recommendations**  
 
-### 5.2 Actionable Recommendation  
-- **Model Improvement:** Enhance predictions by adding new features (e.g., proximity to schools or transport) and improving outlier detection. Use advanced hyperparameter optimization techniques like Bayesian optimization.  
-- **Real-time Integration:** Incorporate real-time data sources (e.g., market trends or neighborhood developments) to keep predictions dynamic.  
-- **Business Adoption:**  
-  - Integrate the model into pricing tools for sellers and real estate agents to set competitive prices.  
-  - Provide a customer-facing tool for price insights to build trust and enhance user experience.  
-  - Use predictions to guide targeted marketing and strategic pricing across property segments.  
-- **Continuous Learning:** Implement automated model retraining with fresh data to adapt to market changes.  
-- **Strategic Insights:** Utilize predictions for business intelligence, such as identifying high-value investment areas and creating data-driven negotiation strategies.
+#### **Model Optimization:**  
+- **Fine-tune classification thresholds** to reduce false positives without sacrificing recall.  
+- **Improve feature engineering** by incorporating behavioral and time-based data.  
+- **Explore alternative resampling techniques** such as SMOTE or hybrid sampling to balance class distribution.  
+- **Implement automated model retraining** to adapt to changing customer behaviors.  
 
-## 6. Contact
-- Name: Rachmawati Hapsari Putri
-- Email: putriemma@gmail.com
-- Linkedin: www.linkedin.com/in/rachmawatihp
+#### **Business Strategy Enhancement:**  
+- **Prioritize high-potential customers** identified by the model to reduce wasted marketing efforts.  
+- **Optimize telemarketing scripts** to increase engagement and call duration.  
+- **Leverage economic trends** to align marketing efforts with favorable conditions.  
+- **Personalize customer interactions** by segmenting marketing strategies based on occupation, financial status, and past engagement.  
+- **Enhance retention strategies** with targeted follow-ups and loyalty programs for past subscribers.  
+
+## **6. Contact**  
+- **Name:** Bela Moneta & Rachmawati Hapsari Putri
+- **Email:** belamoneta@gmail.com & putriemma2010@gmail.com
+- **LinkedIn:** belamoneta & rachmawatihp
